@@ -3,6 +3,9 @@
 /public/storage
 /public/js
 /public/css
+/public/fonts/*
+!/public/fonts/fontawesome
+!/public/fonts/vendor
 /public/mix-manifest.json
 /storage/*.key
 /vendor

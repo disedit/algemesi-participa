@@ -8,11 +8,11 @@
 // Start with assigning color names to specific hex values.
 $white:  #fff;
 $black:  #000;
-$red:    #e74c3c;
+$red:    #E0033A;
 $orange: #e67e22;
 $yellow: #f1c40f;
 $green:  #2ecc71;
-$blue:   #2980b9;
+$blue:   #E0033A;
 $teal:   #5bc0de;
 $pink:   #ff5b77;
 $purple: #613d7c;
@@ -25,7 +25,7 @@ $gray-lighter:              #eceeef;
 $gray-lightest:             #f7f7f9;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             $blue;
+$brand-primary:             #E0033A;
 $brand-success:             $green;
 $brand-info:                $teal;
 $brand-warning:             $orange;
@@ -69,7 +69,7 @@ $link-hover-decoration: underline;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: "Roboto", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: "Kelson", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:       $font-family-sans-serif;
