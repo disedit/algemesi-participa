@@ -70,7 +70,7 @@ return [
     'disable_SMS_verification' => false,
 
     /* Primary color of the application */
-    'primary_color' => '#E0033A',
+    'primary_color' => '#4A7E63',
 
     /* Set up Google Analytics tracking */
     'google_analytics_ID' => 'UA-106217417-1',
