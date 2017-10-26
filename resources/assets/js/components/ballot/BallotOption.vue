@@ -17,6 +17,7 @@
                 <span v-if="displayCost && option.cost > 0" class="option-cost">{{ option.cost | formatCurrency }}</span>
             </span>
         </div>
+        <i :class="'icon far fa-' + option.icon"></i>
         <a href="#" v-if="option.description" class="option-info" @click.prevent="displayInfo">{{ $t('booth_option.more_info') }}</a>
     </div>
 </template>
@@ -84,5 +85,13 @@
         a {
             color: $gray-light;
         }
+    }
+
+    .icon {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      font-size: 4rem;
+      opacity: 0.1;
     }
 </style>
