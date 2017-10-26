@@ -14,7 +14,7 @@ class AddIconToOptions extends Migration
     public function up()
     {
       Schema::table('options', function($table) {
-        $table->string('icon')->after('option');
+        $table->string('icon')->nullable()->after('option');
       });
     }
 
