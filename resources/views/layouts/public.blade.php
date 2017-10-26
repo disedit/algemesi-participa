@@ -14,7 +14,6 @@
 
     <title>@yield('title'){{ config('app.name', 'Participa') }}</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="/fonts/fontawesome/css/combined.css" rel="stylesheet">
 
