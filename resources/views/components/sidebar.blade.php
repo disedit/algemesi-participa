@@ -21,30 +21,7 @@
         </div>
 
         <div v-if="docs">
-            <hr />
             <ul class="sidebar__list">
-                <li class="sidebar__list__item">
-                    @if(isset($isArchive) && Request::segment(3) == 'about')
-                        {{-- This is the archive and we are in the about page --}}
-                        <a href="{{ secure_url('archive/' . $edition->id) }}"><i class="far fa-chart-bar" aria-hidden="true"></i>@lang('participa.results')</a>
-                    @elseif(isset($isArchive) && Request::segment(3) != 'about')
-                        {{-- This is the archive and we are in the main (results) page --}}
-                        <a href="{{ secure_url('archive/' . $edition->id . '/about') }}"><i class="far fa-info-circle" aria-hidden="true"></i>@lang('participa.more_info')</a>
-                    @elseif(!isset($isArchive) && Request::segment(1) == 'about' && $edition->isOpen() )
-                        {{-- This is not the archive, edition is open but we are not in the main vote page --}}
-                        <a href="{{ secure_url('') }}"><i class="far fa-bullhorn" aria-hidden="true"></i>@lang('participa.vote')</a>
-                    @elseif(!isset($isArchive) && Request::segment(1) != 'about' && !$edition->isPending())
-                        {{-- This is not the archive, we are in the main page and it does not contain the about page  --}}
-                        <a href="{{ secure_url('about') }}"><i class="far fa-info-circle" aria-hidden="true"></i>@lang('participa.more_info')</a>
-                    @elseif(!isset($isArchive) && Request::segment(1) == 'about' && $edition->resultsPublished())
-                        {{-- This is not the archive, we are in the about page and results are published  --}}
-                        <a href="{{ secure_url('') }}"><i class="far fa-chart-bar" aria-hidden="true"></i>@lang('participa.results')</a>
-                    @elseif(Request::segment(1) == 'propose')
-                        {{-- This is not the archive page and we are in the popose page --}}
-                        <a href="{{ secure_url('') }}"><i class="far fa-info-circle" aria-hidden="true"></i>@lang('participa.more_info')</a>
-                    @endif
-                </li>
-
                 @if(count($docs) > 0)
                     @forelse($docs as $doc)
                         @php
