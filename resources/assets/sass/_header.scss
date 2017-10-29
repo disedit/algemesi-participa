@@ -4,7 +4,7 @@
 
 .logo {
     img {
-        max-width: 350px;
+        max-width: 200px;
     }
 }
 
@@ -113,6 +113,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
         margin-right: 1rem;
     }
 
@@ -120,6 +121,8 @@
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 0.25rem;
+        margin-top: 0.5rem;
+        letter-spacing: 0.25rem;
     }
 
     p {
@@ -166,7 +169,7 @@
         text-align: center;
 
         img {
-            max-width: 100%;
+            max-width: 60%;
         }
     }
 

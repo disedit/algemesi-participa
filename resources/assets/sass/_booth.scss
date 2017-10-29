@@ -192,6 +192,10 @@
         background: lighten($brand-primary, 50%);
         box-shadow: inset -4px 0px 0px 0px $brand-primary;
     }
+
+    .list-group-item {
+      min-height: 100px;
+    }
 }
 
 .template-simple {
