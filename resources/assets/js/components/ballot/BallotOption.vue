@@ -57,6 +57,10 @@
 <style scoped lang="scss">
     @import '../../../sass/_variables';
 
+    .option-wrapper {
+      margin-right: 3rem;
+    }
+
     .option-name {
         margin-right: 0.25rem;
     }
