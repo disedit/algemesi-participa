@@ -33,14 +33,10 @@
     <div class="container main-container">
         @section('header')
             <header class="header row flex-column flex-sm-row">
-                <div class="col-12 col-md-5 logo">
+                <div class="col-12 logo">
                     <a href="/">
                         <h1><img src="{{ secure_asset('images/' . config('participa.logo', 'logo.png')) }}" alt="{{ config('app.name', 'Participa') }}" /></h1>
                     </a>
-                </div>
-                <div class="col-12 col-md-7 links d-print-none">
-                    @include('components/social')
-                    @include('components/languages')
                 </div>
             </header>
 
